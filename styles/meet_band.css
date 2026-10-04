@@ -1,0 +1,13 @@
+.meet_band a {
+    text-decoration: none;
+    color: black;
+}
+
+.meet_band h2 {
+    text-align: center;
+}
+
+.meet_band hr {
+  border: none;               /* Remove the default gray border */
+  border-top: 1px solid black;  /* Set thickness, style, and color */
+}

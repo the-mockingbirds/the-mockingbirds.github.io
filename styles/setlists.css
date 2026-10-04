@@ -1,0 +1,19 @@
+#songs_table{
+    margin: 0;
+    width: 100%;
+    background-color: black
+}
+
+td{
+    text-align: center;
+    background-color: #c0bcbc;
+}
+
+th{
+     text-align: center;
+    background-color: #ababab;
+}
+
+.album_art {
+    width: 100px;   
+}

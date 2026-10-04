@@ -1,0 +1,23 @@
+.album_name {
+    font-size: large;
+    font-weight: bold;
+}
+
+.song_name {
+    font-size: large;
+    font-style: italic;
+}
+
+.green_day {
+    color: #34823e;
+    font-family: Rock Salt;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ramones {
+    color: #282828;
+    font-family: Rubik Spray Paint;
+    font-weight: 100;
+    font-size: 20px;
+}

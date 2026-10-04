@@ -1,0 +1,42 @@
+
+
+.nav_ul {
+    color: #ffffff;
+    background-color: #970000;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.nav_bar_title {
+    display: inline;
+    font-size: 20px
+}
+
+.nav_bar{
+    display: inline;
+    font-size: 20px;
+    float: right;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#navigation{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+    border-bottom: solid;
+    border-color: #570000;
+    border-width: thick;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}

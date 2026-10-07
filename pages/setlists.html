@@ -2,6 +2,8 @@
 <html lang=en>
 <head>
 	<title>Setlists - The Mockingbirds</title>
+	<link rel="icon" type="image/x-icon" href="/images/logos/favicon.png">
+
 	<script type="text/javascript" src="../scripts/header.js"></script>
 	<script type="text/javascript" src="../scripts/sort_table.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
@@ -11,6 +13,8 @@
     <link rel="stylesheet" href="../styles/setlists.css">
     <link rel="stylesheet" href="../styles/bands/fonts.css">
     <link rel="stylesheet" href="../styles/bands/bands.css">
+	<link rel="stylesheet" href="../styles/bands/ratings.css">
+
 
 
     <!--Import fonts-->
@@ -18,6 +22,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
     </style>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +35,8 @@
 
 		<br><br>
 		
-        <h1 style="text-align: center">Setlist</h1>
-        
+        <h1 style="text-align: center">Songlist</h1>
+		
 		<table id="songs_table" border="5px">
 			<thead>
 				<tr data-sort-method="none">
@@ -37,6 +45,7 @@
 					<th>Original Album</th>
 					<th>Artist Name</th>
 					<th>Genere</th>
+					<th>Explicit Rating</th>
 				</tr>
 			</thead>
             <!--Boulevard of Broken Dream - Green Day-->
@@ -46,6 +55,7 @@
                 <td class="album_name">American Idiot</td>
                 <td class="band green_day">Green Day</td>
 				<td class="emo_rock">Emo</td>
+				<td class="explicit censored">Explicit (Censored Lyrics Available)</td>
             </tr>
             <!--Blitzkrieg Bop - The Rammones-->
             <tr>
@@ -54,6 +64,8 @@
                 <td class="album_name">The Ramones</td>
                 <td class="band ramones">The Ramones</td>
 				<td class="punk_rock">Punk</td>
+				<td class="clean">Clean</td>
+
             </tr>
 			<!--One Way or Another - Blondie-->
             <tr>
@@ -61,7 +73,8 @@
                 <td class="song_name">One Way or Another</td>
                 <td class="album_name">Parallel Lines</td>
                 <td class="band blondie">Blondie</td>
-				<td class="rocl">Rock</td>
+				<td class="rock">Rock</td>
+				<td class="clean">Clean</td>
             </tr>
 			<!--Cigarettes and Valentines - Green Day-->
             <tr>
@@ -70,6 +83,7 @@
                 <td class="album_name">Awesome as F**K</td>
                 <td class="band green_day">Green Day</td>
 				<td class="punk_rock">Punk</td>
+				<td class="clean">Clean</td>
             </tr>
 			<!--Everything About You - Ugly Kid Joe-->
             <tr>
@@ -78,7 +92,38 @@
                 <td class="album_name">America's Least Wanted</td>
                 <td class="band ugly_kid_joe">Ugly Kid Joe</td>
 				<td class="pop_metal">Pop Metal</td>
+				<td class="explicit"><span style="font-size: 0px">Z</span>Explicit</td>
+			</tr>
+			<!--American Idiot - Green Day-->
+            <tr>
+                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/1/13/Green_Day_-_American_Idiot_single_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20251201094311"></td>
+                <td class="song_name">American Idiot</td>
+                <td class="album_name">American Idiot</td>
+                <td class="band green_day">Green Day</td>
+				<td class="punk_rock">Punk</td>
+				<td class="explicit censored">Explicit (Censored Lyrics Available)</td>
+			</tr>
+			<!--The Guns of Brixton - The Clash-->
+            <tr>
+                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/0/00/TheClashLondonCallingalbumcover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20190222090651"></td>
+                <td class="song_name">The Guns of Brixton</td>
+                <td class="album_name">London Calling</td>
+                <td class="band the_clash">The Clash</td>
+				<td class="punk">Punk</td>
+				<td class="clean">Clean</td>
+			</tr>
+			<!--Undone (The Sweater Song) - Weezer-->
+            <tr>
+                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Weezer_undone_the_sweater_song.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"></td>
+                <td class="song_name">Undone – The Sweater Song</td>
+                <td class="album_name">Weezer</td>
+                <td class="band weezer">Weezer</td>
+				<td class="alt_rock">Alternative Rock</td>
+				<td class="clean">Clean</td>
 			</tr>
 		</table>
+		<br><br>
+		<hr>
+		<footer>Explicit ratings are determined based on the rating given in music applications such as Spotify.</footer>
 	</body>
 </html>

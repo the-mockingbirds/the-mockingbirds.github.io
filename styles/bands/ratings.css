@@ -1,0 +1,13 @@
+.explicit {
+    color: black;
+    background-color: #ff0000;
+    font-weight: 900;
+}
+
+.censored {
+    background-color: #ff7100;
+}
+
+.clean {
+    background-color: #00f43d;
+}

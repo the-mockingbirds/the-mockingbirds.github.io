@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: lostware-repair.github.io/index.html
-Disallow: lostware-repair.github.io/menu.html
-Disallow: lostware-repair.github.io/services.html
+Disallow: the-mockingbirds.github.io/index.html
+Disallow: the-mockingbirds.github.io/menu.html
+Disallow: the-mockingbirds.github.io/pages/setlist.html
+Disallow: the-mockingbirds.github.io/meet_the_band.html

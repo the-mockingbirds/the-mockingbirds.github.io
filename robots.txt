@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: lostware-repair.github.io/index.html
+Disallow: lostware-repair.github.io/menu.html
+Disallow: lostware-repair.github.io/services.html

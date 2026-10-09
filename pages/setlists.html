@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="../styles/bands/bands.css">
 	<link rel="stylesheet" href="../styles/bands/ratings.css">
 
-
-
     <!--Import fonts-->
 	<style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
@@ -26,6 +24,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
     </style>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +44,8 @@
 					<th>Original Album</th>
 					<th>Artist Name</th>
 					<th>Genere</th>
-					<th>Explicit Rating</th>
+					<th>Rating</th>
+					<th>Deepcut</th>
 				</tr>
 			</thead>
             <!--Boulevard of Broken Dream - Green Day-->
@@ -55,7 +55,8 @@
                 <td class="album_name">American Idiot</td>
                 <td class="band green_day">Green Day</td>
 				<td class="emo_rock">Emo</td>
-				<td class="explicit censored">Explicit (Censored Lyrics Available)</td>
+				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
+				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
             </tr>
             <!--Blitzkrieg Bop - The Rammones-->
             <tr>
@@ -64,7 +65,8 @@
                 <td class="album_name">The Ramones</td>
                 <td class="band ramones">The Ramones</td>
 				<td class="punk_rock">Punk</td>
-				<td class="clean">Clean</td>
+				<td class="clean"><img src="../images/icons/clean.svg"></td>
+				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
 
             </tr>
 			<!--One Way or Another - Blondie-->
@@ -74,7 +76,8 @@
                 <td class="album_name">Parallel Lines</td>
                 <td class="band blondie">Blondie</td>
 				<td class="rock">Rock</td>
-				<td class="clean">Clean</td>
+				<td class="clean"><img src="../images/icons/clean.svg"></td>
+				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
             </tr>
 			<!--Cigarettes and Valentines - Green Day-->
             <tr>
@@ -83,7 +86,8 @@
                 <td class="album_name">Awesome as F**K</td>
                 <td class="band green_day">Green Day</td>
 				<td class="punk_rock">Punk</td>
-				<td class="clean">Clean</td>
+				<td class="clean"><img src="../images/icons/clean.svg"></td>
+				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
             </tr>
 			<!--Everything About You - Ugly Kid Joe-->
             <tr>
@@ -92,7 +96,8 @@
                 <td class="album_name">America's Least Wanted</td>
                 <td class="band ugly_kid_joe">Ugly Kid Joe</td>
 				<td class="pop_metal">Pop Metal</td>
-				<td class="explicit"><span style="font-size: 0px">Z</span>Explicit</td>
+				<td class="explicit"><img src="../images/icons/explicit.svg"></td>
+				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
 			</tr>
 			<!--American Idiot - Green Day-->
             <tr>
@@ -101,7 +106,8 @@
                 <td class="album_name">American Idiot</td>
                 <td class="band green_day">Green Day</td>
 				<td class="punk_rock">Punk</td>
-				<td class="explicit censored">Explicit (Censored Lyrics Available)</td>
+				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
+				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
 			</tr>
 			<!--The Guns of Brixton - The Clash-->
             <tr>
@@ -110,7 +116,8 @@
                 <td class="album_name">London Calling</td>
                 <td class="band the_clash">The Clash</td>
 				<td class="punk">Punk</td>
-				<td class="clean">Clean</td>
+				<td class="clean"><img src="../images/icons/clean.svg"></td>
+				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
 			</tr>
 			<!--Undone (The Sweater Song) - Weezer-->
             <tr>
@@ -119,8 +126,29 @@
                 <td class="album_name">Weezer</td>
                 <td class="band weezer">Weezer</td>
 				<td class="alt_rock">Alternative Rock</td>
-				<td class="clean">Clean</td>
+				<td class="clean"><img src="../images/icons/clean.svg"></td>
+				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
 			</tr>
+			<!--Holiday - Green Day-->
+            <tr>
+                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/8/8a/Green_Day_-_Holiday_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"></td>
+                <td class="song_name">Holiday</td>
+                <td class="album_name">American Idiot</td>
+                <td class="band green_day">Green Day</td>
+				<td class="punk">Punk</td>
+				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
+				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
+            </tr>
+			<!--When We Die - Bowling for Soup-->
+            <tr>
+                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/3/3a/The_Great_Burrito_Extortion_Case.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
+                <td class="song_name">When We Die</td>
+                <td class="album_name">The Great Burrito Extortion Case</td>
+                <td class="band bowling_for_soup">Bowling for Soup</td>
+				<td class="pop_punk">Pop Punk</td>
+				<td class="clean"><img src="../images/icons/clean.svg"></td>
+				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
+            </tr>
 		</table>
 		<br><br>
 		<hr>

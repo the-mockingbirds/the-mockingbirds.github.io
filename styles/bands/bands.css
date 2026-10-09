@@ -14,7 +14,6 @@
     font-size: 20px;
 }
 
-
 .green_day {
     color: #34823e;
     font-family: Rock Salt;
@@ -51,8 +50,14 @@
 }
 
 .the_clash {
-    color: #6000b9;
+    color: #d20000;
     font-family: Fascinate Inline;
     font-weight: bolder;
+    font-size: 20px;
+}
+
+.bowling_for_soup {
+    color: #8a790c;
+    font-family: Faster One;
     font-size: 20px;
 }

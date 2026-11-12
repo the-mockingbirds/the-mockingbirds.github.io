@@ -33,7 +33,8 @@
 		  }
 		}
     </style>
-    
+
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
@@ -43,6 +44,21 @@
 		
         <h1 style="text-align: center">Songlist</h1>
 		
+		<!--Dropdown-->
+		
+		<div style="margin-left: auto; margin-right: auto; text-align:center;">
+			<label class="desktop_only">
+				Album Artwork Style:<br>
+			</label>
+			<select class="desktop_only" name="album_art_dropdown" id="album_art_drop">
+				<option>Singles Artwork</option>
+				<option>Album Artwork</option>
+			</select>
+		</div>
+		
+		<br><br>
+		
+		<!--Table-->
 		<table id="songs_table" border="5px">
 			<thead>
 				<tr data-sort-method="none">
@@ -57,9 +73,15 @@
 			</thead>
             <!--Boulevard of Broken Dream - Green Day-->
             <tr>
-                <td class="desktop_only"><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/2/2a/Green_Day_-_Boulevard_of_Broken_Dreams_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
+                <td class="desktop_only">
+					<img class="album_art single_art" src="https://upload.wikimedia.org/wikipedia/en/2/2a/Green_Day_-_Boulevard_of_Broken_Dreams_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled">
+					<img class="album_art primary_art" src="https://upload.wikimedia.org/wikipedia/en/e/ed/Green_Day_-_American_Idiot_album_cover.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20220416235946">
+				</td>
                 <td class="song_name">Boulevard of Broken Dreams</td>
-                <td class="album_name">American Idiot</td>
+                <td class="album_name">
+					American Idiot
+					<span class="hidden">04</span>
+				</td>
                 <td class="band green_day">Green Day</td>
 				<td class="genere emo_rock">Emo</td>
 				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
@@ -67,9 +89,15 @@
             </tr>
             <!--Blitzkrieg Bop - The Rammones-->
             <tr>
-                <td class="desktop_only"><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/0/0e/Ramones_-_Blitzkrieg_Bop_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"></td>
+                <td class="desktop_only">
+					<img class="album_art single_art" src="https://upload.wikimedia.org/wikipedia/en/0/0e/Ramones_-_Blitzkrieg_Bop_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original">
+					<img class="album_art primary_art" src="https://upload.wikimedia.org/wikipedia/en/b/bb/Ramones_-_Ramones_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled">
+				</td>
                 <td class="song_name">Blitzkrieg Bop</td>
-                <td class="album_name">The Ramones</td>
+                <td class="album_name">
+					The Ramones
+					<span class="hidden">01</span>
+				</td>
                 <td class="band ramones">The Ramones</td>
 				<td class="genere punk_rock">Punk</td>
 				<td class="clean"><img src="../images/icons/clean.svg"></td>
@@ -78,9 +106,15 @@
             </tr>
 			<!--American Idiot - Green Day-->
             <tr>
-                <td class="desktop_only"><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/1/13/Green_Day_-_American_Idiot_single_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20251201094311"></td>
+                <td class="desktop_only">
+					<img class="album_art single_art" src="https://upload.wikimedia.org/wikipedia/en/1/13/Green_Day_-_American_Idiot_single_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20251201094311">
+					<img class="album_art primary_art" src="https://upload.wikimedia.org/wikipedia/en/e/ed/Green_Day_-_American_Idiot_album_cover.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20220416235946">
+				</td>
                 <td class="song_name">American Idiot</td>
-                <td class="album_name">American Idiot</td>
+                <td class="album_name">
+					American Idiot
+					<span class="hidden">01</span>
+				</td>
                 <td class="band green_day">Green Day</td>
 				<td class="genere punk_rock">Punk</td>
 				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
@@ -93,5 +127,9 @@
 		<footer>Explicit ratings are determined based on the rating given in music applications such as Spotify.</footer>
 		
 		<div id="footer_bar"></div>
+		
+		
+    
+		<script type="text/javascript" src="../scripts/album_artwork.js"></script>
 	</body>
 </html>

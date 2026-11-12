@@ -1,41 +1,58 @@
-.nav_ul {
-    color: #ffffff;
-    background-color: #970000;
-    padding: 20px;
-    margin-bottom: 0;
-}
-
-.nav_bar_title {
-    display: inline;
-    font-size: 20px
-}
-
-.nav_bar{
-    display: inline;
-    font-size: 20px;
-    float: right;
-    text-align: center;
-}
-
-.nav_bar a {
-    text-decoration: none;
-    color: white;
-    padding-right: 20px;
-    text-align: center;
-    vertical-align: middle;
-}	
-
 #navigation{
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-top: -20px;
     border-bottom: solid;
     border-color: #570000;
     border-width: thick;
 }
 
+.head_nav {
+    background-color: #970000;
+    align-content: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.head_nav img {
+    float: left;
+}
+
+.head_nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;   
+}
+
+.head_nav p {
+    
+    height: 100%;
+    line-height: 100%;
+}
+
+.footer_bar {
+    text-align: center;
+    background-color: #daccb7;
+    padding-bottom: 0px;
+}
+
+.footer_bar hr {
+    border: none;               /* Remove the default gray border */
+    border-top: 1px solid black;  /* Set thickness, style, and color */
+}
+
+.homepage_text {
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.youtube {
+filter: brightness(0) saturate(100%) invert(7%) sepia(92%) saturate(6114%) hue-rotate(338deg) brightness(107%) contrast(122%);
+}
+
 body, html{
+    font-family: Georgia;
     margin: 0;
     padding: 0;
 }

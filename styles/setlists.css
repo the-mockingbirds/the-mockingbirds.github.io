@@ -17,3 +17,7 @@ th{
 .album_art {
     width: 100px;   
 }
+
+.hidden{
+    display: none;
+}

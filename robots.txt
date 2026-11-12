@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: the-mockingbirds.github.io/index.html
 Disallow: the-mockingbirds.github.io/menu.html
+Disallow: the-mockingbirds.github.io/footer.html
 Disallow: the-mockingbirds.github.io/pages/setlist.html
 Disallow: the-mockingbirds.github.io/meet_the_band.html

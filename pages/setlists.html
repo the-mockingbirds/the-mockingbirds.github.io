@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="/images/logos/favicon.png">
 
 	<script type="text/javascript" src="../scripts/header.js"></script>
+	<script type="text/javascript" src="../scripts/footer.js"></script>
 	<script type="text/javascript" src="../scripts/sort_table.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
 	
@@ -25,6 +26,12 @@
 		@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+		
+		@media screen and (max-width: 800px) {
+		  .album_art, .clean, .explicit, .not_deepcut, .genere, .desktop_only {
+			display: none;
+		  }
+		}
     </style>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,119 +46,52 @@
 		<table id="songs_table" border="5px">
 			<thead>
 				<tr data-sort-method="none">
-					<th>Artwork</th>
+					<th class="desktop_only">Artwork</th>
 					<th>Song Name</th>
 					<th>Original Album</th>
 					<th>Artist Name</th>
-					<th>Genere</th>
-					<th>Rating</th>
-					<th>Deepcut</th>
+					<th class="desktop_only">Genere</th>
+					<th class="desktop_only">Rating</th>
+					<th class="desktop_only">Deepcut</th>
 				</tr>
 			</thead>
             <!--Boulevard of Broken Dream - Green Day-->
             <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/2/2a/Green_Day_-_Boulevard_of_Broken_Dreams_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
+                <td class="desktop_only"><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/2/2a/Green_Day_-_Boulevard_of_Broken_Dreams_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
                 <td class="song_name">Boulevard of Broken Dreams</td>
                 <td class="album_name">American Idiot</td>
                 <td class="band green_day">Green Day</td>
-				<td class="emo_rock">Emo</td>
-				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
-				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
-            </tr>
-			<!--Holiday - Green Day-->
-            <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/8/8a/Green_Day_-_Holiday_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"></td>
-                <td class="song_name">Holiday</td>
-                <td class="album_name">American Idiot</td>
-                <td class="band green_day">Green Day</td>
-				<td class="punk">Punk</td>
+				<td class="genere emo_rock">Emo</td>
 				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
 				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
             </tr>
             <!--Blitzkrieg Bop - The Rammones-->
             <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/0/0e/Ramones_-_Blitzkrieg_Bop_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"></td>
+                <td class="desktop_only"><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/0/0e/Ramones_-_Blitzkrieg_Bop_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"></td>
                 <td class="song_name">Blitzkrieg Bop</td>
                 <td class="album_name">The Ramones</td>
                 <td class="band ramones">The Ramones</td>
-				<td class="punk_rock">Punk</td>
+				<td class="genere punk_rock">Punk</td>
 				<td class="clean"><img src="../images/icons/clean.svg"></td>
 				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
 
             </tr>
-			<!--One Way or Another - Blondie-->
-            <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/4/48/Blondie_-_Parallel_Lines.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
-                <td class="song_name">One Way or Another</td>
-                <td class="album_name">Parallel Lines</td>
-                <td class="band blondie">Blondie</td>
-				<td class="rock">Rock</td>
-				<td class="clean"><img src="../images/icons/clean.svg"></td>
-				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
-            </tr>
-			<!--Cigarettes and Valentines - Green Day-->
-            <tr>
-                <td><img class="album_art" src="https://static.wikia.nocookie.net/greenday/images/6/6e/LOST_ALBUMS_BE_LIKE.png"></td>
-                <td class="song_name">Cigarettes and Valentines</td>
-                <td class="album_name">Awesome as F**K</td>
-                <td class="band green_day">Green Day</td>
-				<td class="punk_rock">Punk</td>
-				<td class="clean"><img src="../images/icons/clean.svg"></td>
-				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
-            </tr>
-			<!--Everything About You - Ugly Kid Joe-->
-            <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/8/84/Everything_about_you.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
-                <td class="song_name">Everything About You</td>
-                <td class="album_name">America's Least Wanted</td>
-                <td class="band ugly_kid_joe">Ugly Kid Joe</td>
-				<td class="pop_metal">Pop Metal</td>
-				<td class="explicit"><img src="../images/icons/explicit.svg"></td>
-				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
-			</tr>
 			<!--American Idiot - Green Day-->
             <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/1/13/Green_Day_-_American_Idiot_single_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20251201094311"></td>
+                <td class="desktop_only"><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/1/13/Green_Day_-_American_Idiot_single_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20251201094311"></td>
                 <td class="song_name">American Idiot</td>
                 <td class="album_name">American Idiot</td>
                 <td class="band green_day">Green Day</td>
-				<td class="punk_rock">Punk</td>
+				<td class="genere punk_rock">Punk</td>
 				<td class="explicit censored"><img src="../images/icons/explicit.svg"></td>
 				<td class="not_deepcut"><img src="../images/icons/no.svg"></td>
 			</tr>
-			<!--Should I Stay or Should I Go - The Clash-->
-            <tr>
-                <td><img class="album_art" src="https://thumb.wikimedia.org/wikipedia/en/thumb/0/05/Should_I_Stay_or_Should_I_Go_by_The_Clash_1991_rerelease.png/250px-Should_I_Stay_or_Should_I_Go_by_The_Clash_1991_rerelease.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"></td>
-                <td class="song_name">Should I Stay or Should I Go</td>
-                <td class="album_name">Combat Rock</td>
-                <td class="band the_clash">The Clash</td>
-				<td class="punk">Punk</td>
-				<td class="clean"><img src="../images/icons/clean.svg"></td>
-				<td class="no_deepcut"><img src="../images/icons/no.svg"></td>
-			</tr>
-			<!--Undone (The Sweater Song) - Weezer-->
-            <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Weezer_undone_the_sweater_song.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"></td>
-                <td class="song_name">Undone – The Sweater Song</td>
-                <td class="album_name">Weezer</td>
-                <td class="band weezer">Weezer</td>
-				<td class="alt_rock">Alternative Rock</td>
-				<td class="clean"><img src="../images/icons/clean.svg"></td>
-				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
-			</tr>
-			<!--When We Die - Bowling for Soup-->
-            <tr>
-                <td><img class="album_art" src="https://upload.wikimedia.org/wikipedia/en/3/3a/The_Great_Burrito_Extortion_Case.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></td>
-                <td class="song_name">When We Die</td>
-                <td class="album_name">The Great Burrito Extortion Case</td>
-                <td class="band bowling_for_soup">Bowling for Soup</td>
-				<td class="pop_punk">Pop Punk</td>
-				<td class="clean"><img src="../images/icons/clean.svg"></td>
-				<td class="yes_deepcut"><img src="../images/icons/clean.svg"></td>
-            </tr>
+			
 		</table>
 		<br><br>
 		<hr>
 		<footer>Explicit ratings are determined based on the rating given in music applications such as Spotify.</footer>
+		
+		<div id="footer_bar"></div>
 	</body>
 </html>

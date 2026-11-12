@@ -6,8 +6,43 @@
 .meet_band h2 {
     text-align: center;
 }
+.meet_band h3 {
+	text-align: center;
+}
 
 .meet_band hr {
   border: none;               /* Remove the default gray border */
   border-top: 1px solid black;  /* Set thickness, style, and color */
+}
+
+#table_of_contents {
+	  text-align: center; /* centers inline/inline-block children */
+}
+
+.meet_band ul {
+	display: inline-block; /* ensures list is treated as inline */
+  text-align: left;
+}
+
+.bio_box {
+	font-size: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	}
+
+.bio_box img {
+	text-align:center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote {
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	color: #808080;
+	text-indent: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
 }

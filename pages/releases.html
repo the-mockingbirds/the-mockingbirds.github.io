@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>Releases - The Mockingbirds</title>
+	<link rel="icon" type="image/x-icon" href="/images/logos/favicon.png">
+
+	<meta http-equiv="Cache-Control" content="no-cache">
+
+	<script type="text/javascript" src="../scripts/header.js"></script>
+	<script type="text/javascript" src="../scripts/footer.js"></script>
+	<script type="text/javascript" src="../scripts/sort_table.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
+	
+    <!--Styles-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/setlists.css">
+    <link rel="stylesheet" href="../styles/bands/fonts.css">
+	<link rel="stylesheet" href="../styles/releases.css">
+
+    <!--Import fonts-->
+	<style>
+		@media screen and (max-width: 800px) {
+		  .album_art, .clean, .explicit, .desktop_only, .song_length, .release_length, .album-redirect_long{
+			display: none;
+		  }
+		}
+		@media screen and (min-width: 801px) {
+		  .album-redirect_short{
+			display: none;
+		  }
+		}
+    </style>
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div id="navigation"></div>
+
+		<br><br>
+		
+        <h1 style="text-align: center">Releases</h1>
+		
+		<br><br>
+		
+		<!--Table-->
+		<table id="songs_table" border="5px">
+			<thead>
+				<tr data-sort-method="none">
+					<th class="desktop_only">Artwork</th>
+					<th>Album Name</th>
+					<th>Type</th>
+					<th>Date</th>
+					<th class="desktop_only">Length</th>
+					<th>Durration</th>
+					<!--<th>Link</th>-->
+				</tr>
+			</thead>
+            <!--Oh Shit Was That On? - Green Day-->
+            <tr>
+                <td class="desktop_only">
+					<img class="album_art" src="../images/logos/square_branded.png" alt="This art is just temporary so the site won't break!">
+				</td>
+                <td class="release_name">Oh Sh!t Was That On?</td>
+				<td class="live_album">Live</td>
+                <td class="release_date">2026-</td>
+				<td class="release_length">1</td>
+				<td class="release_durration">4:20</td>
+				<!--<td class="album-redirect">
+					<a href="../pages/releases/oh_sugar.html" class="album-redirect_long">Listen to the album!</a>
+					<a href="../pages/releases/oh_sugar.html" class="album-redirect_short">Listen!</a>
+				</td>-->
+            </tr>
+			
+		</table>
+		<br><br>
+		
+		<div id="footer_bar"></div>
+		
+		
+    
+		<script type="text/javascript" src="../scripts/album_artwork.js"></script>
+	</body>
+</html>

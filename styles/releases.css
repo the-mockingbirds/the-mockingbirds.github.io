@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Limelight&family=Special+Elite&display=swap');
+
+.live_album {
+    font-family: "Special Elite", system-ui;
+    color: darkred;
+}
+
+.studio_album {
+    font-family: "IBM Plex Sans Devanagari", sans-serif;
+    color: black;
+}
+
+.cover_album {
+    font-family: "Limelight", sans-serif;
+    color: darkgreen;
+}

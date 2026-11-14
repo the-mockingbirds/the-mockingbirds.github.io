@@ -47,8 +47,38 @@
     margin-right: 5%;
 }
 
+.showcase{
+    margin-left:5%;
+    margin-right: 5%;
+    align-content: center;
+    display: block;
+  justify-content: center;
+}
+
+.video_showcase {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+.showcase_video_title {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
 .youtube {
 filter: brightness(0) saturate(100%) invert(7%) sepia(92%) saturate(6114%) hue-rotate(338deg) brightness(107%) contrast(122%);
+}
+
+.soundcloud {
+filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(2806%) hue-rotate(0deg) brightness(101%) contrast(105%);
 }
 
 body, html{

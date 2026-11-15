@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById("footer_bar").innerHTML = this.responseText;
 		}
 		};
-		xhttp.open("GET", "../footer.html", true);
+		xhttp.open("GET", "/footer.html", true);
 		xhttp.send();
 		});

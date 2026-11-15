@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById("navigation").innerHTML = this.responseText;
 		}
 		};
-		xhttp.open("GET", "../menu.html", true);
+		xhttp.open("GET", "/menu.html", true);
 		xhttp.send();
 		});

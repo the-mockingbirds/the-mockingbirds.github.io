@@ -13,6 +13,15 @@
 	<link rel="stylesheet" href="/styles/releases/oh_sugar.css">
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		@media screen and (max-width: 800px) {
+		  .desktop_only {
+			display: none;
+		  }
+		}
+    </style>
+	
 </head>
 	<body>
 		<div id="navigation"></div>
@@ -20,19 +29,38 @@
 		<div class="oh_sugar_body">
             <br><br>
 
-            <h1 style="text-align: center">Meet the Flock</h1>
+            <h1 style="text-align: center">Oh Sh!t Was That On?</h1>
+			
+			<img id="album_art_center" src="/images/releases/oh_sugar.png" alt="This image is a work in progress...">
 
-            <h3>Members</h3>
+            <h3><a href="https://youtube.com/playlist?list=PLPTo14ZPkOdk&si=KGiqTGOtI99eikua">Watch on YouTube!</a></h3>
 
             <table id="#tracklist_table" border="5px">
                 <thead>
                     <tr>
                         <th>Track Number</th>
                         <th>Song Name</th>
+						<th class="desktop_only">Performance Date</th>
+						<th class="desktop_only">Original Artist</th>
+						<th>Song Length</th>
+						<th>Listen!</th>
                     </tr>
                 </thead>
                 <tr>
                     <td>1</td>
+					<td>Boulevard of Broken Dreams</td>
+					<td class="desktop_only">11/13/2026</td>
+					<td class="desktop_only">Green Day</td>
+					<td>4:20</td>
+					<td>
+						<a href="https://soundcloud.com/the-mockingbirds-68915423/boulevard-of-broken-dreams/s-Z5KN1vPREU3?si=28f7e2667477498197cfe56854c47587&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" title="Listen on SoundCloud">
+							Listen on SoundCloud!
+						</a>
+						<br>
+						<a href="https://youtu.be/i5DepK4KsQ0?si=QJ4PRjQPgHKqYtzF" title="Listen YouTube">
+							Watch on YouTube!
+						</a>
+					</td>
                 </tr>
             </table>
 
@@ -41,8 +69,7 @@
             <hr>
 
             <br><br>
-
-            <h2 id="band_vocals" >Vocalist</h2>
+			<div id="footer"></div>
         </div>
     </body>
 </html>
